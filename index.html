@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Splide CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <title>SPLIDE JS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        section {
+            width: 90%;
+            margin: 0px auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 80px auto;
+            font-weight: bold;
+            font-size: 80px;
+        }
+
+        ul li img {
+            width: 100%;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <section>
+        <div>
+            <h1>Splide Carousel</h1>
+            <div class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="img/img%20(1).jpg" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/img%20(2).jpg" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/img%20(3).jpg" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/img%20(4).jpg" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/img%20(5).jpg" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/img%20(6).jpg" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/img%20(1).jpg" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/img%20(2).jpg" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/img%20(3).jpg" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/img%20(4).jpg" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/img%20(5).jpg" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/img%20(6).jpg" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <script>
+        new Splide('.splide', {
+            perPage: 3,
+            perMove: 1,
+            loop: true,
+        }).mount();
+    </script>
+
+    <!-- Splide js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script>
+        new Splide('.splide', {
+            perPage: 3,
+            rewind: true,
+            perMove: 1,
+            gap: "1rem",
+        }).mount();
+    </script>
+</body>
+
+</html>
